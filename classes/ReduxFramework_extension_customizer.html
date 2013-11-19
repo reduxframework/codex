@@ -1,0 +1,333 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>API Documentation » \ReduxFramework_extension_customizer</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/ReduxFramework.html"><i class="icon-folder-open"></i> ReduxFramework</a></li>
+<li><a href="../packages/Redux_Field.html"><i class="icon-folder-open"></i> Redux_Field</a></li>
+<li><a href="../packages/Redux_Tracking.html"><i class="icon-folder-open"></i> Redux_Tracking</a></li>
+<li><a href="../packages/Simple%20System%20Info.html"><i class="icon-folder-open"></i> Simple System Info</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">188</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Class Constructor. Defines the args for the extions class"><span class="description">Class Constructor. Defines the args for the extions class</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method__customizer_html_output" title="_customizer_html_output() :: HTML OUTPUT."><span class="description">HTML OUTPUT.</span><pre>_customizer_html_output()</pre></a></li>
+<li class="method public "><a href="#method__enqueue" title="_enqueue() :: Enqueue CSS/JS for the customizer controls"><span class="description">Enqueue CSS/JS for the customizer controls</span><pre>_enqueue()</pre></a></li>
+<li class="method public "><a href="#method__enqueue_previewer" title="_enqueue_previewer() :: Enqueue CSS/JS for preview pane"><span class="description">Enqueue CSS/JS for preview pane</span><pre>_enqueue_previewer()</pre></a></li>
+<li class="method public "><a href="#method__register_customizer_controls" title="_register_customizer_controls() :: "><span class="description">_register_customizer_controls()
+        </span><pre>_register_customizer_controls()</pre></a></li>
+<li class="method public "><a href="#method__register_setting" title="_register_setting() :: Register Option for use"><span class="description">Register Option for use</span><pre>_register_setting()</pre></a></li>
+<li class="method public "><a href="#method__validate_options" title="_validate_options() :: Validate the Options options before insertion"><span class="description">Validate the Options options before insertion</span><pre>_validate_options()</pre></a></li>
+<li class="method public "><a href="#method__validate_values" title="_validate_values() :: Validate values from options form (used in settings api validate function)
+calls the custom validation class for the field so authors can override with custom classes"><span class="description">Validate values from options form (used in settings api validate function)
+calls the custom validation class for the field so authors can override with custom classes</span><pre>_validate_values()</pre></a></li>
+<li class="method public "><a href="#method_customizer_save_after" title="customizer_save_after() :: "><span class="description">customizer_save_after()
+        </span><pre>customizer_save_after()</pre></a></li>
+<li class="method public "><a href="#method_customizer_save_before" title="customizer_save_before() :: "><span class="description">customizer_save_before()
+        </span><pre>customizer_save_before()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul><li class="property protected "><a href="#property_redux" title="$redux() :: "><span class="description"></span><pre>$redux</pre></a></li></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property_extension_dir" title="$extension_dir() :: "><span class="description"></span><pre>$extension_dir</pre></a></li>
+<li class="property private "><a href="#property_extension_url" title="$extension_url() :: "><span class="description"></span><pre>$extension_url</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ReduxFramework_extension_customizer"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ReduxFramework_extension_customizer.html">ReduxFramework_extension_customizer</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Main ReduxFramework customizer extension class</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Class Constructor. Defines the args for the extions class</h2>
+<pre>__construct($parent) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parent</h4></div>
+</div></div>
+</div>
+<a id="method__customizer_html_output"></a><div class="element clickable method public method__customizer_html_output" data-toggle="collapse" data-target=".method__customizer_html_output .collapse">
+<h2>HTML OUTPUT.</h2>
+<pre>_customizer_html_output() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method__enqueue"></a><div class="element clickable method public method__enqueue" data-toggle="collapse" data-target=".method__enqueue .collapse">
+<h2>Enqueue CSS/JS for the customizer controls</h2>
+<pre>_enqueue() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>global</th>
+<td>$wp_styles</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method__enqueue_previewer"></a><div class="element clickable method public method__enqueue_previewer" data-toggle="collapse" data-target=".method__enqueue_previewer .collapse">
+<h2>Enqueue CSS/JS for preview pane</h2>
+<pre>_enqueue_previewer() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+<tr>
+<th>global</th>
+<td>$wp_styles</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method__register_customizer_controls"></a><div class="element clickable method public method__register_customizer_controls" data-toggle="collapse" data-target=".method__register_customizer_controls .collapse">
+<h2>_register_customizer_controls()
+        </h2>
+<pre>_register_customizer_controls($wp_customize) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$wp_customize</h4></div>
+</div></div>
+</div>
+<a id="method__register_setting"></a><div class="element clickable method public method__register_setting" data-toggle="collapse" data-target=".method__register_setting .collapse">
+<h2>Register Option for use</h2>
+<pre>_register_setting() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method__validate_options"></a><div class="element clickable method public method__validate_options" data-toggle="collapse" data-target=".method__validate_options .collapse">
+<h2>Validate the Options options before insertion</h2>
+<pre>_validate_options(array $plugin_options) : </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>3.0.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$plugin_options</h4>
+<code>array</code><p>The options array</p></div>
+<h3>Returns</h3>
+<div class="subelement response"></div>
+</div></div>
+</div>
+<a id="method__validate_values"></a><div class="element clickable method public method__validate_values" data-toggle="collapse" data-target=".method__validate_values .collapse">
+<h2>Validate values from options form (used in settings api validate function)
+calls the custom validation class for the field so authors can override with custom classes</h2>
+<pre>_validate_values(array $plugin_options, array $options) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$plugin_options</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>$plugin_options</div>
+</div></div>
+</div>
+<a id="method_customizer_save_after"></a><div class="element clickable method public method_customizer_save_after" data-toggle="collapse" data-target=".method_customizer_save_after .collapse">
+<h2>customizer_save_after()
+        </h2>
+<pre>customizer_save_after($wp_customize) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$wp_customize</h4></div>
+</div></div>
+</div>
+<a id="method_customizer_save_before"></a><div class="element clickable method public method_customizer_save_before" data-toggle="collapse" data-target=".method_customizer_save_before .collapse">
+<h2>customizer_save_before()
+        </h2>
+<pre>customizer_save_before($wp_customize) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$wp_customize</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_redux"> </a><div class="element clickable property protected property_redux" data-toggle="collapse" data-target=".property_redux .collapse">
+<h2>$redux</h2>
+<pre>$redux </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_extension_dir"> </a><div class="element clickable property private property_extension_dir" data-toggle="collapse" data-target=".property_extension_dir .collapse">
+<h2>$extension_dir</h2>
+<pre>$extension_dir </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_extension_url"> </a><div class="element clickable property private property_extension_url" data-toggle="collapse" data-target=".property_extension_url .collapse">
+<h2>$extension_url</h2>
+<pre>$extension_url </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2013-11-19T15:06:03+01:00.<br></footer></div>
+</div>
+</body>
+</html>

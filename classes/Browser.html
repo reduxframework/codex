@@ -1,0 +1,1217 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>API Documentation » \Browser</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/ReduxFramework.html"><i class="icon-folder-open"></i> ReduxFramework</a></li>
+<li><a href="../packages/Redux_Field.html"><i class="icon-folder-open"></i> Redux_Field</a></li>
+<li><a href="../packages/Redux_Tracking.html"><i class="icon-folder-open"></i> Redux_Tracking</a></li>
+<li><a href="../packages/Simple%20System%20Info.html"><i class="icon-folder-open"></i> Simple System Info</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">188</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_Browser" title="Browser() :: "><span class="description">Browser()
+        </span><pre>Browser()</pre></a></li>
+<li class="method public "><a href="#method___toString" title="__toString() :: Returns a formatted string with a summary of the details of the browser."><span class="description">Returns a formatted string with a summary of the details of the browser.</span><pre>__toString()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserAmaya" title="checkBrowserAmaya() :: Determine if the browser is Amaya or not (last updated 1.7)"><span class="description">Determine if the browser is Amaya or not (last updated 1.7)</span><pre>checkBrowserAmaya()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserAndroid" title="checkBrowserAndroid() :: Determine if the browser is Android or not (last updated 1.7)"><span class="description">Determine if the browser is Android or not (last updated 1.7)</span><pre>checkBrowserAndroid()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserBlackBerry" title="checkBrowserBlackBerry() :: Determine if the user is using a BlackBerry (last updated 1.7)"><span class="description">Determine if the user is using a BlackBerry (last updated 1.7)</span><pre>checkBrowserBlackBerry()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserChrome" title="checkBrowserChrome() :: Determine if the browser is Chrome or not (last updated 1.7)"><span class="description">Determine if the browser is Chrome or not (last updated 1.7)</span><pre>checkBrowserChrome()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserFirebird" title="checkBrowserFirebird() :: Determine if the browser is Firebird or not (last updated 1.7)"><span class="description">Determine if the browser is Firebird or not (last updated 1.7)</span><pre>checkBrowserFirebird()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserFirefox" title="checkBrowserFirefox() :: Determine if the browser is Firefox or not (last updated 1.7)"><span class="description">Determine if the browser is Firefox or not (last updated 1.7)</span><pre>checkBrowserFirefox()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserGaleon" title="checkBrowserGaleon() :: Determine if the browser is Galeon or not (last updated 1.7)"><span class="description">Determine if the browser is Galeon or not (last updated 1.7)</span><pre>checkBrowserGaleon()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserGoogleBot" title="checkBrowserGoogleBot() :: Determine if the browser is the GoogleBot or not (last updated 1.7)"><span class="description">Determine if the browser is the GoogleBot or not (last updated 1.7)</span><pre>checkBrowserGoogleBot()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserIcab" title="checkBrowserIcab() :: Determine if the browser is iCab or not (last updated 1.7)"><span class="description">Determine if the browser is iCab or not (last updated 1.7)</span><pre>checkBrowserIcab()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserIceCat" title="checkBrowserIceCat() :: Determine if the browser is Ice Cat or not (http://en.wikipedia.org/wiki/GNU_IceCat) (last updated 1.7)"><span class="description">Determine if the browser is Ice Cat or not (http://en.wikipedia.org/wiki/GNU_IceCat) (last updated 1.7)</span><pre>checkBrowserIceCat()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserIceweasel" title="checkBrowserIceweasel() :: Determine if the browser is Firefox or not (last updated 1.7)"><span class="description">Determine if the browser is Firefox or not (last updated 1.7)</span><pre>checkBrowserIceweasel()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserInternetExplorer" title="checkBrowserInternetExplorer() :: Determine if the browser is Internet Explorer or not (last updated 1.7)"><span class="description">Determine if the browser is Internet Explorer or not (last updated 1.7)</span><pre>checkBrowserInternetExplorer()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserKonqueror" title="checkBrowserKonqueror() :: Determine if the browser is Konqueror or not (last updated 1.7)"><span class="description">Determine if the browser is Konqueror or not (last updated 1.7)</span><pre>checkBrowserKonqueror()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserLynx" title="checkBrowserLynx() :: Determine if the browser is Lynx or not (last updated 1.7)"><span class="description">Determine if the browser is Lynx or not (last updated 1.7)</span><pre>checkBrowserLynx()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserMSNBot" title="checkBrowserMSNBot() :: Determine if the browser is the MSNBot or not (last updated 1.9)"><span class="description">Determine if the browser is the MSNBot or not (last updated 1.9)</span><pre>checkBrowserMSNBot()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserMozilla" title="checkBrowserMozilla() :: Determine if the browser is Mozilla or not (last updated 1.7)"><span class="description">Determine if the browser is Mozilla or not (last updated 1.7)</span><pre>checkBrowserMozilla()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserNetPositive" title="checkBrowserNetPositive() :: Determine if the browser is NetPositive or not (last updated 1.7)"><span class="description">Determine if the browser is NetPositive or not (last updated 1.7)</span><pre>checkBrowserNetPositive()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserNetscapeNavigator9Plus" title="checkBrowserNetscapeNavigator9Plus() :: Determine if the browser is Netscape Navigator 9+ or not (last updated 1.7)
+NOTE: (http://browser.netscape.com/ - Official support ended on March 1st, 2008)"><span class="description">Determine if the browser is Netscape Navigator 9+ or not (last updated 1.7)
+NOTE: (http://browser.netscape.com/ - Official support ended on March 1st, 2008)</span><pre>checkBrowserNetscapeNavigator9Plus()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserNokia" title="checkBrowserNokia() :: Determine if the browser is Nokia or not (last updated 1.7)"><span class="description">Determine if the browser is Nokia or not (last updated 1.7)</span><pre>checkBrowserNokia()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserOmniWeb" title="checkBrowserOmniWeb() :: Determine if the browser is OmniWeb or not (last updated 1.7)"><span class="description">Determine if the browser is OmniWeb or not (last updated 1.7)</span><pre>checkBrowserOmniWeb()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserOpera" title="checkBrowserOpera() :: Determine if the browser is Opera or not (last updated 1.7)"><span class="description">Determine if the browser is Opera or not (last updated 1.7)</span><pre>checkBrowserOpera()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserPhoenix" title="checkBrowserPhoenix() :: Determine if the browser is Phoenix or not (last updated 1.7)"><span class="description">Determine if the browser is Phoenix or not (last updated 1.7)</span><pre>checkBrowserPhoenix()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserSafari" title="checkBrowserSafari() :: Determine if the browser is Safari or not (last updated 1.7)"><span class="description">Determine if the browser is Safari or not (last updated 1.7)</span><pre>checkBrowserSafari()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserShiretoko" title="checkBrowserShiretoko() :: Determine if the browser is Shiretoko or not (https://wiki.mozilla.org/Projects/shiretoko) (last updated 1.7)"><span class="description">Determine if the browser is Shiretoko or not (https://wiki.mozilla.org/Projects/shiretoko) (last updated 1.7)</span><pre>checkBrowserShiretoko()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserSlurp" title="checkBrowserSlurp() :: Determine if the browser is the Yahoo! Slurp Robot or not (last updated 1.7)"><span class="description">Determine if the browser is the Yahoo! Slurp Robot or not (last updated 1.7)</span><pre>checkBrowserSlurp()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserW3CValidator" title="checkBrowserW3CValidator() :: Determine if the browser is the W3C Validator or not (last updated 1.7)"><span class="description">Determine if the browser is the W3C Validator or not (last updated 1.7)</span><pre>checkBrowserW3CValidator()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowserWebTv" title="checkBrowserWebTv() :: Determine if the browser is WebTv or not (last updated 1.7)"><span class="description">Determine if the browser is WebTv or not (last updated 1.7)</span><pre>checkBrowserWebTv()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowseriPad" title="checkBrowseriPad() :: Determine if the browser is iPod or not (last updated 1.7)"><span class="description">Determine if the browser is iPod or not (last updated 1.7)</span><pre>checkBrowseriPad()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowseriPhone" title="checkBrowseriPhone() :: Determine if the browser is iPhone or not (last updated 1.7)"><span class="description">Determine if the browser is iPhone or not (last updated 1.7)</span><pre>checkBrowseriPhone()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowseriPod" title="checkBrowseriPod() :: Determine if the browser is iPod or not (last updated 1.7)"><span class="description">Determine if the browser is iPod or not (last updated 1.7)</span><pre>checkBrowseriPod()</pre></a></li>
+<li class="method public "><a href="#method_checkBrowsers" title="checkBrowsers() :: Protected routine to determine the browser type"><span class="description">Protected routine to determine the browser type</span><pre>checkBrowsers()</pre></a></li>
+<li class="method public "><a href="#method_checkForAol" title="checkForAol() :: Determine if the user is using an AOL User Agent (last updated 1.7)"><span class="description">Determine if the user is using an AOL User Agent (last updated 1.7)</span><pre>checkForAol()</pre></a></li>
+<li class="method public "><a href="#method_checkPlatform" title="checkPlatform() :: Determine the user's platform (last updated 1.7)"><span class="description">Determine the user's platform (last updated 1.7)</span><pre>checkPlatform()</pre></a></li>
+<li class="method public "><a href="#method_determine" title="determine() :: Protected routine to calculate and determine what the browser is in use (including platform)"><span class="description">Protected routine to calculate and determine what the browser is in use (including platform)</span><pre>determine()</pre></a></li>
+<li class="method public "><a href="#method_getAolVersion" title="getAolVersion() :: The version of AOL."><span class="description">The version of AOL.</span><pre>getAolVersion()</pre></a></li>
+<li class="method public "><a href="#method_getBrowser" title="getBrowser() :: The name of the browser.  All return types are from the class contants"><span class="description">The name of the browser.  All return types are from the class contants</span><pre>getBrowser()</pre></a></li>
+<li class="method public "><a href="#method_getPlatform" title="getPlatform() :: The name of the platform.  All return types are from the class contants"><span class="description">The name of the platform.  All return types are from the class contants</span><pre>getPlatform()</pre></a></li>
+<li class="method public "><a href="#method_getUserAgent" title="getUserAgent() :: Get the user agent value in use to determine the browser"><span class="description">Get the user agent value in use to determine the browser</span><pre>getUserAgent()</pre></a></li>
+<li class="method public "><a href="#method_getVersion" title="getVersion() :: The version of the browser."><span class="description">The version of the browser.</span><pre>getVersion()</pre></a></li>
+<li class="method public "><a href="#method_isAol" title="isAol() :: Is the browser from AOL?"><span class="description">Is the browser from AOL?</span><pre>isAol()</pre></a></li>
+<li class="method public "><a href="#method_isBrowser" title="isBrowser() :: Check to see if the specific browser is valid"><span class="description">Check to see if the specific browser is valid</span><pre>isBrowser()</pre></a></li>
+<li class="method public "><a href="#method_isChromeFrame" title='isChromeFrame() :: Used to determine if the browser is actually "chromeframe"'><span class="description">Used to determine if the browser is actually "chromeframe"</span><pre>isChromeFrame()</pre></a></li>
+<li class="method public "><a href="#method_isMobile" title="isMobile() :: Is the browser from a mobile device?"><span class="description">Is the browser from a mobile device?</span><pre>isMobile()</pre></a></li>
+<li class="method public "><a href="#method_isRobot" title="isRobot() :: Is the browser from a robot (ex Slurp,GoogleBot)?"><span class="description">Is the browser from a robot (ex Slurp,GoogleBot)?</span><pre>isRobot()</pre></a></li>
+<li class="method public "><a href="#method_reset" title="reset() :: Reset all properties"><span class="description">Reset all properties</span><pre>reset()</pre></a></li>
+<li class="method public "><a href="#method_setAol" title="setAol() :: Set the browser to be from AOL"><span class="description">Set the browser to be from AOL</span><pre>setAol()</pre></a></li>
+<li class="method public "><a href="#method_setAolVersion" title="setAolVersion() :: Set the version of AOL"><span class="description">Set the version of AOL</span><pre>setAolVersion()</pre></a></li>
+<li class="method public "><a href="#method_setBrowser" title="setBrowser() :: Set the name of the browser"><span class="description">Set the name of the browser</span><pre>setBrowser()</pre></a></li>
+<li class="method public "><a href="#method_setMobile" title="setMobile() :: Set the Browser to be mobile"><span class="description">Set the Browser to be mobile</span><pre>setMobile()</pre></a></li>
+<li class="method public "><a href="#method_setPlatform" title="setPlatform() :: Set the name of the platform"><span class="description">Set the name of the platform</span><pre>setPlatform()</pre></a></li>
+<li class="method public "><a href="#method_setRobot" title="setRobot() :: Set the Browser to be a robot"><span class="description">Set the Browser to be a robot</span><pre>setRobot()</pre></a></li>
+<li class="method public "><a href="#method_setUserAgent" title="setUserAgent() :: Set the user agent value (the construction will use the HTTP header value - this will overwrite it)"><span class="description">Set the user agent value (the construction will use the HTTP header value - this will overwrite it)</span><pre>setUserAgent()</pre></a></li>
+<li class="method public "><a href="#method_setVersion" title="setVersion() :: Set the version of the browser"><span class="description">Set the version of the browser</span><pre>setVersion()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_BROWSER_AMAYA" title="$BROWSER_AMAYA() :: "><span class="description"></span><pre>$BROWSER_AMAYA</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_ANDROID" title="$BROWSER_ANDROID() :: "><span class="description"></span><pre>$BROWSER_ANDROID</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_BLACKBERRY" title="$BROWSER_BLACKBERRY() :: "><span class="description"></span><pre>$BROWSER_BLACKBERRY</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_CHROME" title="$BROWSER_CHROME() :: "><span class="description"></span><pre>$BROWSER_CHROME</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_FIREBIRD" title="$BROWSER_FIREBIRD() :: "><span class="description"></span><pre>$BROWSER_FIREBIRD</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_FIREFOX" title="$BROWSER_FIREFOX() :: "><span class="description"></span><pre>$BROWSER_FIREFOX</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_GALEON" title="$BROWSER_GALEON() :: "><span class="description"></span><pre>$BROWSER_GALEON</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_GOOGLEBOT" title="$BROWSER_GOOGLEBOT() :: "><span class="description"></span><pre>$BROWSER_GOOGLEBOT</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_ICAB" title="$BROWSER_ICAB() :: "><span class="description"></span><pre>$BROWSER_ICAB</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_ICECAT" title="$BROWSER_ICECAT() :: "><span class="description"></span><pre>$BROWSER_ICECAT</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_ICEWEASEL" title="$BROWSER_ICEWEASEL() :: "><span class="description"></span><pre>$BROWSER_ICEWEASEL</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_IE" title="$BROWSER_IE() :: "><span class="description"></span><pre>$BROWSER_IE</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_IPAD" title="$BROWSER_IPAD() :: "><span class="description"></span><pre>$BROWSER_IPAD</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_IPHONE" title="$BROWSER_IPHONE() :: "><span class="description"></span><pre>$BROWSER_IPHONE</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_IPOD" title="$BROWSER_IPOD() :: "><span class="description"></span><pre>$BROWSER_IPOD</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_KONQUEROR" title="$BROWSER_KONQUEROR() :: "><span class="description"></span><pre>$BROWSER_KONQUEROR</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_LYNX" title="$BROWSER_LYNX() :: "><span class="description"></span><pre>$BROWSER_LYNX</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_MOZILLA" title="$BROWSER_MOZILLA() :: "><span class="description"></span><pre>$BROWSER_MOZILLA</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_MSN" title="$BROWSER_MSN() :: "><span class="description"></span><pre>$BROWSER_MSN</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_MSNBOT" title="$BROWSER_MSNBOT() :: "><span class="description"></span><pre>$BROWSER_MSNBOT</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_NETPOSITIVE" title="$BROWSER_NETPOSITIVE() :: "><span class="description"></span><pre>$BROWSER_NETPOSITIVE</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_NETSCAPE_NAVIGATOR" title="$BROWSER_NETSCAPE_NAVIGATOR() :: "><span class="description"></span><pre>$BROWSER_NETSCAPE_NAVIGATOR</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_NOKIA" title="$BROWSER_NOKIA() :: "><span class="description"></span><pre>$BROWSER_NOKIA</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_NOKIA_S60" title="$BROWSER_NOKIA_S60() :: "><span class="description"></span><pre>$BROWSER_NOKIA_S60</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_OMNIWEB" title="$BROWSER_OMNIWEB() :: "><span class="description"></span><pre>$BROWSER_OMNIWEB</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_OPERA" title="$BROWSER_OPERA() :: "><span class="description"></span><pre>$BROWSER_OPERA</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_OPERA_MINI" title="$BROWSER_OPERA_MINI() :: "><span class="description"></span><pre>$BROWSER_OPERA_MINI</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_PHOENIX" title="$BROWSER_PHOENIX() :: "><span class="description"></span><pre>$BROWSER_PHOENIX</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_POCKET_IE" title="$BROWSER_POCKET_IE() :: "><span class="description"></span><pre>$BROWSER_POCKET_IE</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_SAFARI" title="$BROWSER_SAFARI() :: "><span class="description"></span><pre>$BROWSER_SAFARI</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_SHIRETOKO" title="$BROWSER_SHIRETOKO() :: "><span class="description"></span><pre>$BROWSER_SHIRETOKO</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_SLURP" title="$BROWSER_SLURP() :: "><span class="description"></span><pre>$BROWSER_SLURP</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_UNKNOWN" title="$BROWSER_UNKNOWN() :: "><span class="description"></span><pre>$BROWSER_UNKNOWN</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_W3CVALIDATOR" title="$BROWSER_W3CVALIDATOR() :: "><span class="description"></span><pre>$BROWSER_W3CVALIDATOR</pre></a></li>
+<li class="property public "><a href="#property_BROWSER_WEBTV" title="$BROWSER_WEBTV() :: "><span class="description"></span><pre>$BROWSER_WEBTV</pre></a></li>
+<li class="property public "><a href="#property_OPERATING_SYSTEM_UNKNOWN" title="$OPERATING_SYSTEM_UNKNOWN() :: "><span class="description"></span><pre>$OPERATING_SYSTEM_UNKNOWN</pre></a></li>
+<li class="property public "><a href="#property_PLATFORM_ANDROID" title="$PLATFORM_ANDROID() :: "><span class="description"></span><pre>$PLATFORM_ANDROID</pre></a></li>
+<li class="property public "><a href="#property_PLATFORM_APPLE" title="$PLATFORM_APPLE() :: "><span class="description"></span><pre>$PLATFORM_APPLE</pre></a></li>
+<li class="property public "><a href="#property_PLATFORM_BEOS" title="$PLATFORM_BEOS() :: "><span class="description"></span><pre>$PLATFORM_BEOS</pre></a></li>
+<li class="property public "><a href="#property_PLATFORM_BLACKBERRY" title="$PLATFORM_BLACKBERRY() :: "><span class="description"></span><pre>$PLATFORM_BLACKBERRY</pre></a></li>
+<li class="property public "><a href="#property_PLATFORM_FREEBSD" title="$PLATFORM_FREEBSD() :: "><span class="description"></span><pre>$PLATFORM_FREEBSD</pre></a></li>
+<li class="property public "><a href="#property_PLATFORM_IPAD" title="$PLATFORM_IPAD() :: "><span class="description"></span><pre>$PLATFORM_IPAD</pre></a></li>
+<li class="property public "><a href="#property_PLATFORM_IPHONE" title="$PLATFORM_IPHONE() :: "><span class="description"></span><pre>$PLATFORM_IPHONE</pre></a></li>
+<li class="property public "><a href="#property_PLATFORM_IPOD" title="$PLATFORM_IPOD() :: "><span class="description"></span><pre>$PLATFORM_IPOD</pre></a></li>
+<li class="property public "><a href="#property_PLATFORM_LINUX" title="$PLATFORM_LINUX() :: "><span class="description"></span><pre>$PLATFORM_LINUX</pre></a></li>
+<li class="property public "><a href="#property_PLATFORM_NETBSD" title="$PLATFORM_NETBSD() :: "><span class="description"></span><pre>$PLATFORM_NETBSD</pre></a></li>
+<li class="property public "><a href="#property_PLATFORM_NOKIA" title="$PLATFORM_NOKIA() :: "><span class="description"></span><pre>$PLATFORM_NOKIA</pre></a></li>
+<li class="property public "><a href="#property_PLATFORM_OPENBSD" title="$PLATFORM_OPENBSD() :: "><span class="description"></span><pre>$PLATFORM_OPENBSD</pre></a></li>
+<li class="property public "><a href="#property_PLATFORM_OPENSOLARIS" title="$PLATFORM_OPENSOLARIS() :: "><span class="description"></span><pre>$PLATFORM_OPENSOLARIS</pre></a></li>
+<li class="property public "><a href="#property_PLATFORM_OS2" title="$PLATFORM_OS2() :: "><span class="description"></span><pre>$PLATFORM_OS2</pre></a></li>
+<li class="property public "><a href="#property_PLATFORM_SUNOS" title="$PLATFORM_SUNOS() :: "><span class="description"></span><pre>$PLATFORM_SUNOS</pre></a></li>
+<li class="property public "><a href="#property_PLATFORM_UNKNOWN" title="$PLATFORM_UNKNOWN() :: "><span class="description"></span><pre>$PLATFORM_UNKNOWN</pre></a></li>
+<li class="property public "><a href="#property_PLATFORM_WINDOWS" title="$PLATFORM_WINDOWS() :: "><span class="description"></span><pre>$PLATFORM_WINDOWS</pre></a></li>
+<li class="property public "><a href="#property_PLATFORM_WINDOWS_CE" title="$PLATFORM_WINDOWS_CE() :: "><span class="description"></span><pre>$PLATFORM_WINDOWS_CE</pre></a></li>
+<li class="property public "><a href="#property_VERSION_UNKNOWN" title="$VERSION_UNKNOWN() :: "><span class="description"></span><pre>$VERSION_UNKNOWN</pre></a></li>
+<li class="property public "><a href="#property__agent" title="$_agent() :: "><span class="description"></span><pre>$_agent</pre></a></li>
+<li class="property public "><a href="#property__aol_version" title="$_aol_version() :: "><span class="description"></span><pre>$_aol_version</pre></a></li>
+<li class="property public "><a href="#property__browser_name" title="$_browser_name() :: "><span class="description"></span><pre>$_browser_name</pre></a></li>
+<li class="property public "><a href="#property__is_aol" title="$_is_aol() :: "><span class="description"></span><pre>$_is_aol</pre></a></li>
+<li class="property public "><a href="#property__is_mobile" title="$_is_mobile() :: "><span class="description"></span><pre>$_is_mobile</pre></a></li>
+<li class="property public "><a href="#property__is_robot" title="$_is_robot() :: "><span class="description"></span><pre>$_is_robot</pre></a></li>
+<li class="property public "><a href="#property__os" title="$_os() :: "><span class="description"></span><pre>$_os</pre></a></li>
+<li class="property public "><a href="#property__platform" title="$_platform() :: "><span class="description"></span><pre>$_platform</pre></a></li>
+<li class="property public "><a href="#property__version" title="$_version() :: "><span class="description"></span><pre>$_version</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\Browser"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Browser.html">Browser</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Browser detection class</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>author</th>
+<td><a href="">Chris Schuld</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>1.0</td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_Browser"></a><div class="element clickable method public method_Browser" data-toggle="collapse" data-target=".method_Browser .collapse">
+<h2>Browser()
+        </h2>
+<pre>Browser($useragent) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$useragent</h4></div>
+</div></div>
+</div>
+<a id="method___toString"></a><div class="element clickable method public method___toString" data-toggle="collapse" data-target=".method___toString .collapse">
+<h2>Returns a formatted string with a summary of the details of the browser.</h2>
+<pre>__toString() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>formatted string with a summary of the browser</div>
+</div></div>
+</div>
+<a id="method_checkBrowserAmaya"></a><div class="element clickable method public method_checkBrowserAmaya" data-toggle="collapse" data-target=".method_checkBrowserAmaya .collapse">
+<h2>Determine if the browser is Amaya or not (last updated 1.7)</h2>
+<pre>checkBrowserAmaya() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is Amaya otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserAndroid"></a><div class="element clickable method public method_checkBrowserAndroid" data-toggle="collapse" data-target=".method_checkBrowserAndroid .collapse">
+<h2>Determine if the browser is Android or not (last updated 1.7)</h2>
+<pre>checkBrowserAndroid() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is Android otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserBlackBerry"></a><div class="element clickable method public method_checkBrowserBlackBerry" data-toggle="collapse" data-target=".method_checkBrowserBlackBerry .collapse">
+<h2>Determine if the user is using a BlackBerry (last updated 1.7)</h2>
+<pre>checkBrowserBlackBerry() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is the BlackBerry browser otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserChrome"></a><div class="element clickable method public method_checkBrowserChrome" data-toggle="collapse" data-target=".method_checkBrowserChrome .collapse">
+<h2>Determine if the browser is Chrome or not (last updated 1.7)</h2>
+<pre>checkBrowserChrome() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is Chrome otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserFirebird"></a><div class="element clickable method public method_checkBrowserFirebird" data-toggle="collapse" data-target=".method_checkBrowserFirebird .collapse">
+<h2>Determine if the browser is Firebird or not (last updated 1.7)</h2>
+<pre>checkBrowserFirebird() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is Firebird otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserFirefox"></a><div class="element clickable method public method_checkBrowserFirefox" data-toggle="collapse" data-target=".method_checkBrowserFirefox .collapse">
+<h2>Determine if the browser is Firefox or not (last updated 1.7)</h2>
+<pre>checkBrowserFirefox() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is Firefox otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserGaleon"></a><div class="element clickable method public method_checkBrowserGaleon" data-toggle="collapse" data-target=".method_checkBrowserGaleon .collapse">
+<h2>Determine if the browser is Galeon or not (last updated 1.7)</h2>
+<pre>checkBrowserGaleon() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is Galeon otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserGoogleBot"></a><div class="element clickable method public method_checkBrowserGoogleBot" data-toggle="collapse" data-target=".method_checkBrowserGoogleBot .collapse">
+<h2>Determine if the browser is the GoogleBot or not (last updated 1.7)</h2>
+<pre>checkBrowserGoogleBot() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is the GoogletBot otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserIcab"></a><div class="element clickable method public method_checkBrowserIcab" data-toggle="collapse" data-target=".method_checkBrowserIcab .collapse">
+<h2>Determine if the browser is iCab or not (last updated 1.7)</h2>
+<pre>checkBrowserIcab() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is iCab otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserIceCat"></a><div class="element clickable method public method_checkBrowserIceCat" data-toggle="collapse" data-target=".method_checkBrowserIceCat .collapse">
+<h2>Determine if the browser is Ice Cat or not (http://en.wikipedia.org/wiki/GNU_IceCat) (last updated 1.7)</h2>
+<pre>checkBrowserIceCat() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is Ice Cat otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserIceweasel"></a><div class="element clickable method public method_checkBrowserIceweasel" data-toggle="collapse" data-target=".method_checkBrowserIceweasel .collapse">
+<h2>Determine if the browser is Firefox or not (last updated 1.7)</h2>
+<pre>checkBrowserIceweasel() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is Firefox otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserInternetExplorer"></a><div class="element clickable method public method_checkBrowserInternetExplorer" data-toggle="collapse" data-target=".method_checkBrowserInternetExplorer .collapse">
+<h2>Determine if the browser is Internet Explorer or not (last updated 1.7)</h2>
+<pre>checkBrowserInternetExplorer() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is Internet Explorer otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserKonqueror"></a><div class="element clickable method public method_checkBrowserKonqueror" data-toggle="collapse" data-target=".method_checkBrowserKonqueror .collapse">
+<h2>Determine if the browser is Konqueror or not (last updated 1.7)</h2>
+<pre>checkBrowserKonqueror() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is Konqueror otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserLynx"></a><div class="element clickable method public method_checkBrowserLynx" data-toggle="collapse" data-target=".method_checkBrowserLynx .collapse">
+<h2>Determine if the browser is Lynx or not (last updated 1.7)</h2>
+<pre>checkBrowserLynx() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is Lynx otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserMSNBot"></a><div class="element clickable method public method_checkBrowserMSNBot" data-toggle="collapse" data-target=".method_checkBrowserMSNBot .collapse">
+<h2>Determine if the browser is the MSNBot or not (last updated 1.9)</h2>
+<pre>checkBrowserMSNBot() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is the MSNBot otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserMozilla"></a><div class="element clickable method public method_checkBrowserMozilla" data-toggle="collapse" data-target=".method_checkBrowserMozilla .collapse">
+<h2>Determine if the browser is Mozilla or not (last updated 1.7)</h2>
+<pre>checkBrowserMozilla() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is Mozilla otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserNetPositive"></a><div class="element clickable method public method_checkBrowserNetPositive" data-toggle="collapse" data-target=".method_checkBrowserNetPositive .collapse">
+<h2>Determine if the browser is NetPositive or not (last updated 1.7)</h2>
+<pre>checkBrowserNetPositive() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is NetPositive otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserNetscapeNavigator9Plus"></a><div class="element clickable method public method_checkBrowserNetscapeNavigator9Plus" data-toggle="collapse" data-target=".method_checkBrowserNetscapeNavigator9Plus .collapse">
+<h2>Determine if the browser is Netscape Navigator 9+ or not (last updated 1.7)
+NOTE: (http://browser.netscape.com/ - Official support ended on March 1st, 2008)</h2>
+<pre>checkBrowserNetscapeNavigator9Plus() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is Netscape Navigator 9+ otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserNokia"></a><div class="element clickable method public method_checkBrowserNokia" data-toggle="collapse" data-target=".method_checkBrowserNokia .collapse">
+<h2>Determine if the browser is Nokia or not (last updated 1.7)</h2>
+<pre>checkBrowserNokia() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is Nokia otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserOmniWeb"></a><div class="element clickable method public method_checkBrowserOmniWeb" data-toggle="collapse" data-target=".method_checkBrowserOmniWeb .collapse">
+<h2>Determine if the browser is OmniWeb or not (last updated 1.7)</h2>
+<pre>checkBrowserOmniWeb() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is OmniWeb otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserOpera"></a><div class="element clickable method public method_checkBrowserOpera" data-toggle="collapse" data-target=".method_checkBrowserOpera .collapse">
+<h2>Determine if the browser is Opera or not (last updated 1.7)</h2>
+<pre>checkBrowserOpera() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is Opera otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserPhoenix"></a><div class="element clickable method public method_checkBrowserPhoenix" data-toggle="collapse" data-target=".method_checkBrowserPhoenix .collapse">
+<h2>Determine if the browser is Phoenix or not (last updated 1.7)</h2>
+<pre>checkBrowserPhoenix() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is Phoenix otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserSafari"></a><div class="element clickable method public method_checkBrowserSafari" data-toggle="collapse" data-target=".method_checkBrowserSafari .collapse">
+<h2>Determine if the browser is Safari or not (last updated 1.7)</h2>
+<pre>checkBrowserSafari() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is Safari otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserShiretoko"></a><div class="element clickable method public method_checkBrowserShiretoko" data-toggle="collapse" data-target=".method_checkBrowserShiretoko .collapse">
+<h2>Determine if the browser is Shiretoko or not (https://wiki.mozilla.org/Projects/shiretoko) (last updated 1.7)</h2>
+<pre>checkBrowserShiretoko() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is Shiretoko otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserSlurp"></a><div class="element clickable method public method_checkBrowserSlurp" data-toggle="collapse" data-target=".method_checkBrowserSlurp .collapse">
+<h2>Determine if the browser is the Yahoo! Slurp Robot or not (last updated 1.7)</h2>
+<pre>checkBrowserSlurp() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is the Yahoo! Slurp Robot otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserW3CValidator"></a><div class="element clickable method public method_checkBrowserW3CValidator" data-toggle="collapse" data-target=".method_checkBrowserW3CValidator .collapse">
+<h2>Determine if the browser is the W3C Validator or not (last updated 1.7)</h2>
+<pre>checkBrowserW3CValidator() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is the W3C Validator otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowserWebTv"></a><div class="element clickable method public method_checkBrowserWebTv" data-toggle="collapse" data-target=".method_checkBrowserWebTv .collapse">
+<h2>Determine if the browser is WebTv or not (last updated 1.7)</h2>
+<pre>checkBrowserWebTv() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is WebTv otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowseriPad"></a><div class="element clickable method public method_checkBrowseriPad" data-toggle="collapse" data-target=".method_checkBrowseriPad .collapse">
+<h2>Determine if the browser is iPod or not (last updated 1.7)</h2>
+<pre>checkBrowseriPad() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is iPod otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowseriPhone"></a><div class="element clickable method public method_checkBrowseriPhone" data-toggle="collapse" data-target=".method_checkBrowseriPhone .collapse">
+<h2>Determine if the browser is iPhone or not (last updated 1.7)</h2>
+<pre>checkBrowseriPhone() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is iPhone otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowseriPod"></a><div class="element clickable method public method_checkBrowseriPod" data-toggle="collapse" data-target=".method_checkBrowseriPod .collapse">
+<h2>Determine if the browser is iPod or not (last updated 1.7)</h2>
+<pre>checkBrowseriPod() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is iPod otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkBrowsers"></a><div class="element clickable method public method_checkBrowsers" data-toggle="collapse" data-target=".method_checkBrowsers .collapse">
+<h2>Protected routine to determine the browser type</h2>
+<pre>checkBrowsers() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser was detected otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkForAol"></a><div class="element clickable method public method_checkForAol" data-toggle="collapse" data-target=".method_checkForAol .collapse">
+<h2>Determine if the user is using an AOL User Agent (last updated 1.7)</h2>
+<pre>checkForAol() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is from AOL otherwise false</div>
+</div></div>
+</div>
+<a id="method_checkPlatform"></a><div class="element clickable method public method_checkPlatform" data-toggle="collapse" data-target=".method_checkPlatform .collapse">
+<h2>Determine the user's platform (last updated 1.7)</h2>
+<pre>checkPlatform() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_determine"></a><div class="element clickable method public method_determine" data-toggle="collapse" data-target=".method_determine .collapse">
+<h2>Protected routine to calculate and determine what the browser is in use (including platform)</h2>
+<pre>determine() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getAolVersion"></a><div class="element clickable method public method_getAolVersion" data-toggle="collapse" data-target=".method_getAolVersion .collapse">
+<h2>The version of AOL.</h2>
+<pre>getAolVersion() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Version of AOL (will only contain alpha-numeric characters and a period)</div>
+</div></div>
+</div>
+<a id="method_getBrowser"></a><div class="element clickable method public method_getBrowser" data-toggle="collapse" data-target=".method_getBrowser .collapse">
+<h2>The name of the browser.  All return types are from the class contants</h2>
+<pre>getBrowser() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Name of the browser</div>
+</div></div>
+</div>
+<a id="method_getPlatform"></a><div class="element clickable method public method_getPlatform" data-toggle="collapse" data-target=".method_getPlatform .collapse">
+<h2>The name of the platform.  All return types are from the class contants</h2>
+<pre>getPlatform() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Name of the browser</div>
+</div></div>
+</div>
+<a id="method_getUserAgent"></a><div class="element clickable method public method_getUserAgent" data-toggle="collapse" data-target=".method_getUserAgent .collapse">
+<h2>Get the user agent value in use to determine the browser</h2>
+<pre>getUserAgent() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The user agent from the HTTP header</div>
+</div></div>
+</div>
+<a id="method_getVersion"></a><div class="element clickable method public method_getVersion" data-toggle="collapse" data-target=".method_getVersion .collapse">
+<h2>The version of the browser.</h2>
+<pre>getVersion() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Version of the browser (will only contain alpha-numeric characters and a period)</div>
+</div></div>
+</div>
+<a id="method_isAol"></a><div class="element clickable method public method_isAol" data-toggle="collapse" data-target=".method_isAol .collapse">
+<h2>Is the browser from AOL?</h2>
+<pre>isAol() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is from AOL otherwise false</div>
+</div></div>
+</div>
+<a id="method_isBrowser"></a><div class="element clickable method public method_isBrowser" data-toggle="collapse" data-target=".method_isBrowser .collapse">
+<h2>Check to see if the specific browser is valid</h2>
+<pre>isBrowser(string $browserName) : True</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$browserName</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>True</code>if the browser is the specified browser</div>
+</div></div>
+</div>
+<a id="method_isChromeFrame"></a><div class="element clickable method public method_isChromeFrame" data-toggle="collapse" data-target=".method_isChromeFrame .collapse">
+<h2>Used to determine if the browser is actually "chromeframe"</h2>
+<pre>isChromeFrame() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.7</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is using chromeframe</div>
+</div></div>
+</div>
+<a id="method_isMobile"></a><div class="element clickable method public method_isMobile" data-toggle="collapse" data-target=".method_isMobile .collapse">
+<h2>Is the browser from a mobile device?</h2>
+<pre>isMobile() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is from a mobile device otherwise false</div>
+</div></div>
+</div>
+<a id="method_isRobot"></a><div class="element clickable method public method_isRobot" data-toggle="collapse" data-target=".method_isRobot .collapse">
+<h2>Is the browser from a robot (ex Slurp,GoogleBot)?</h2>
+<pre>isRobot() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if the browser is from a robot otherwise false</div>
+</div></div>
+</div>
+<a id="method_reset"></a><div class="element clickable method public method_reset" data-toggle="collapse" data-target=".method_reset .collapse">
+<h2>Reset all properties</h2>
+<pre>reset() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_setAol"></a><div class="element clickable method public method_setAol" data-toggle="collapse" data-target=".method_setAol .collapse">
+<h2>Set the browser to be from AOL</h2>
+<pre>setAol(mixed $isAol) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$isAol</h4></div>
+</div></div>
+</div>
+<a id="method_setAolVersion"></a><div class="element clickable method public method_setAolVersion" data-toggle="collapse" data-target=".method_setAolVersion .collapse">
+<h2>Set the version of AOL</h2>
+<pre>setAolVersion(mixed $version) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$version</h4><p>The version of AOL</p></div>
+</div></div>
+</div>
+<a id="method_setBrowser"></a><div class="element clickable method public method_setBrowser" data-toggle="collapse" data-target=".method_setBrowser .collapse">
+<h2>Set the name of the browser</h2>
+<pre>setBrowser(mixed $browser) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$browser</h4><p>The name of the Browser</p></div>
+</div></div>
+</div>
+<a id="method_setMobile"></a><div class="element clickable method public method_setMobile" data-toggle="collapse" data-target=".method_setMobile .collapse">
+<h2>Set the Browser to be mobile</h2>
+<pre>setMobile(boolean $value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>boolean</code><p>is the browser a mobile brower or not</p></div>
+</div></div>
+</div>
+<a id="method_setPlatform"></a><div class="element clickable method public method_setPlatform" data-toggle="collapse" data-target=".method_setPlatform .collapse">
+<h2>Set the name of the platform</h2>
+<pre>setPlatform(mixed $platform) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$platform</h4><p>The name of the Platform</p></div>
+</div></div>
+</div>
+<a id="method_setRobot"></a><div class="element clickable method public method_setRobot" data-toggle="collapse" data-target=".method_setRobot .collapse">
+<h2>Set the Browser to be a robot</h2>
+<pre>setRobot(boolean $value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>boolean</code><p>is the browser a robot or not</p></div>
+</div></div>
+</div>
+<a id="method_setUserAgent"></a><div class="element clickable method public method_setUserAgent" data-toggle="collapse" data-target=".method_setUserAgent .collapse">
+<h2>Set the user agent value (the construction will use the HTTP header value - this will overwrite it)</h2>
+<pre>setUserAgent(mixed $agent_string) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$agent_string</h4><p>The value for the User Agent</p></div>
+</div></div>
+</div>
+<a id="method_setVersion"></a><div class="element clickable method public method_setVersion" data-toggle="collapse" data-target=".method_setVersion .collapse">
+<h2>Set the version of the browser</h2>
+<pre>setVersion(mixed $version) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$version</h4><p>The version of the Browser</p></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_BROWSER_AMAYA"> </a><div class="element clickable property public property_BROWSER_AMAYA" data-toggle="collapse" data-target=".property_BROWSER_AMAYA .collapse">
+<h2>$BROWSER_AMAYA</h2>
+<pre>$BROWSER_AMAYA </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_ANDROID"> </a><div class="element clickable property public property_BROWSER_ANDROID" data-toggle="collapse" data-target=".property_BROWSER_ANDROID .collapse">
+<h2>$BROWSER_ANDROID</h2>
+<pre>$BROWSER_ANDROID </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_BLACKBERRY"> </a><div class="element clickable property public property_BROWSER_BLACKBERRY" data-toggle="collapse" data-target=".property_BROWSER_BLACKBERRY .collapse">
+<h2>$BROWSER_BLACKBERRY</h2>
+<pre>$BROWSER_BLACKBERRY </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_CHROME"> </a><div class="element clickable property public property_BROWSER_CHROME" data-toggle="collapse" data-target=".property_BROWSER_CHROME .collapse">
+<h2>$BROWSER_CHROME</h2>
+<pre>$BROWSER_CHROME </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_FIREBIRD"> </a><div class="element clickable property public property_BROWSER_FIREBIRD" data-toggle="collapse" data-target=".property_BROWSER_FIREBIRD .collapse">
+<h2>$BROWSER_FIREBIRD</h2>
+<pre>$BROWSER_FIREBIRD </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_FIREFOX"> </a><div class="element clickable property public property_BROWSER_FIREFOX" data-toggle="collapse" data-target=".property_BROWSER_FIREFOX .collapse">
+<h2>$BROWSER_FIREFOX</h2>
+<pre>$BROWSER_FIREFOX </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_GALEON"> </a><div class="element clickable property public property_BROWSER_GALEON" data-toggle="collapse" data-target=".property_BROWSER_GALEON .collapse">
+<h2>$BROWSER_GALEON</h2>
+<pre>$BROWSER_GALEON </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_GOOGLEBOT"> </a><div class="element clickable property public property_BROWSER_GOOGLEBOT" data-toggle="collapse" data-target=".property_BROWSER_GOOGLEBOT .collapse">
+<h2>$BROWSER_GOOGLEBOT</h2>
+<pre>$BROWSER_GOOGLEBOT </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_ICAB"> </a><div class="element clickable property public property_BROWSER_ICAB" data-toggle="collapse" data-target=".property_BROWSER_ICAB .collapse">
+<h2>$BROWSER_ICAB</h2>
+<pre>$BROWSER_ICAB </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_ICECAT"> </a><div class="element clickable property public property_BROWSER_ICECAT" data-toggle="collapse" data-target=".property_BROWSER_ICECAT .collapse">
+<h2>$BROWSER_ICECAT</h2>
+<pre>$BROWSER_ICECAT </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_ICEWEASEL"> </a><div class="element clickable property public property_BROWSER_ICEWEASEL" data-toggle="collapse" data-target=".property_BROWSER_ICEWEASEL .collapse">
+<h2>$BROWSER_ICEWEASEL</h2>
+<pre>$BROWSER_ICEWEASEL </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_IE"> </a><div class="element clickable property public property_BROWSER_IE" data-toggle="collapse" data-target=".property_BROWSER_IE .collapse">
+<h2>$BROWSER_IE</h2>
+<pre>$BROWSER_IE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_IPAD"> </a><div class="element clickable property public property_BROWSER_IPAD" data-toggle="collapse" data-target=".property_BROWSER_IPAD .collapse">
+<h2>$BROWSER_IPAD</h2>
+<pre>$BROWSER_IPAD </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_IPHONE"> </a><div class="element clickable property public property_BROWSER_IPHONE" data-toggle="collapse" data-target=".property_BROWSER_IPHONE .collapse">
+<h2>$BROWSER_IPHONE</h2>
+<pre>$BROWSER_IPHONE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_IPOD"> </a><div class="element clickable property public property_BROWSER_IPOD" data-toggle="collapse" data-target=".property_BROWSER_IPOD .collapse">
+<h2>$BROWSER_IPOD</h2>
+<pre>$BROWSER_IPOD </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_KONQUEROR"> </a><div class="element clickable property public property_BROWSER_KONQUEROR" data-toggle="collapse" data-target=".property_BROWSER_KONQUEROR .collapse">
+<h2>$BROWSER_KONQUEROR</h2>
+<pre>$BROWSER_KONQUEROR </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_LYNX"> </a><div class="element clickable property public property_BROWSER_LYNX" data-toggle="collapse" data-target=".property_BROWSER_LYNX .collapse">
+<h2>$BROWSER_LYNX</h2>
+<pre>$BROWSER_LYNX </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_MOZILLA"> </a><div class="element clickable property public property_BROWSER_MOZILLA" data-toggle="collapse" data-target=".property_BROWSER_MOZILLA .collapse">
+<h2>$BROWSER_MOZILLA</h2>
+<pre>$BROWSER_MOZILLA </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_MSN"> </a><div class="element clickable property public property_BROWSER_MSN" data-toggle="collapse" data-target=".property_BROWSER_MSN .collapse">
+<h2>$BROWSER_MSN</h2>
+<pre>$BROWSER_MSN </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_MSNBOT"> </a><div class="element clickable property public property_BROWSER_MSNBOT" data-toggle="collapse" data-target=".property_BROWSER_MSNBOT .collapse">
+<h2>$BROWSER_MSNBOT</h2>
+<pre>$BROWSER_MSNBOT </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_NETPOSITIVE"> </a><div class="element clickable property public property_BROWSER_NETPOSITIVE" data-toggle="collapse" data-target=".property_BROWSER_NETPOSITIVE .collapse">
+<h2>$BROWSER_NETPOSITIVE</h2>
+<pre>$BROWSER_NETPOSITIVE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_NETSCAPE_NAVIGATOR"> </a><div class="element clickable property public property_BROWSER_NETSCAPE_NAVIGATOR" data-toggle="collapse" data-target=".property_BROWSER_NETSCAPE_NAVIGATOR .collapse">
+<h2>$BROWSER_NETSCAPE_NAVIGATOR</h2>
+<pre>$BROWSER_NETSCAPE_NAVIGATOR </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_NOKIA"> </a><div class="element clickable property public property_BROWSER_NOKIA" data-toggle="collapse" data-target=".property_BROWSER_NOKIA .collapse">
+<h2>$BROWSER_NOKIA</h2>
+<pre>$BROWSER_NOKIA </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_NOKIA_S60"> </a><div class="element clickable property public property_BROWSER_NOKIA_S60" data-toggle="collapse" data-target=".property_BROWSER_NOKIA_S60 .collapse">
+<h2>$BROWSER_NOKIA_S60</h2>
+<pre>$BROWSER_NOKIA_S60 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_OMNIWEB"> </a><div class="element clickable property public property_BROWSER_OMNIWEB" data-toggle="collapse" data-target=".property_BROWSER_OMNIWEB .collapse">
+<h2>$BROWSER_OMNIWEB</h2>
+<pre>$BROWSER_OMNIWEB </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_OPERA"> </a><div class="element clickable property public property_BROWSER_OPERA" data-toggle="collapse" data-target=".property_BROWSER_OPERA .collapse">
+<h2>$BROWSER_OPERA</h2>
+<pre>$BROWSER_OPERA </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_OPERA_MINI"> </a><div class="element clickable property public property_BROWSER_OPERA_MINI" data-toggle="collapse" data-target=".property_BROWSER_OPERA_MINI .collapse">
+<h2>$BROWSER_OPERA_MINI</h2>
+<pre>$BROWSER_OPERA_MINI </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_PHOENIX"> </a><div class="element clickable property public property_BROWSER_PHOENIX" data-toggle="collapse" data-target=".property_BROWSER_PHOENIX .collapse">
+<h2>$BROWSER_PHOENIX</h2>
+<pre>$BROWSER_PHOENIX </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_POCKET_IE"> </a><div class="element clickable property public property_BROWSER_POCKET_IE" data-toggle="collapse" data-target=".property_BROWSER_POCKET_IE .collapse">
+<h2>$BROWSER_POCKET_IE</h2>
+<pre>$BROWSER_POCKET_IE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_SAFARI"> </a><div class="element clickable property public property_BROWSER_SAFARI" data-toggle="collapse" data-target=".property_BROWSER_SAFARI .collapse">
+<h2>$BROWSER_SAFARI</h2>
+<pre>$BROWSER_SAFARI </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_SHIRETOKO"> </a><div class="element clickable property public property_BROWSER_SHIRETOKO" data-toggle="collapse" data-target=".property_BROWSER_SHIRETOKO .collapse">
+<h2>$BROWSER_SHIRETOKO</h2>
+<pre>$BROWSER_SHIRETOKO </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_SLURP"> </a><div class="element clickable property public property_BROWSER_SLURP" data-toggle="collapse" data-target=".property_BROWSER_SLURP .collapse">
+<h2>$BROWSER_SLURP</h2>
+<pre>$BROWSER_SLURP </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_UNKNOWN"> </a><div class="element clickable property public property_BROWSER_UNKNOWN" data-toggle="collapse" data-target=".property_BROWSER_UNKNOWN .collapse">
+<h2>$BROWSER_UNKNOWN</h2>
+<pre>$BROWSER_UNKNOWN </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_W3CVALIDATOR"> </a><div class="element clickable property public property_BROWSER_W3CVALIDATOR" data-toggle="collapse" data-target=".property_BROWSER_W3CVALIDATOR .collapse">
+<h2>$BROWSER_W3CVALIDATOR</h2>
+<pre>$BROWSER_W3CVALIDATOR </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BROWSER_WEBTV"> </a><div class="element clickable property public property_BROWSER_WEBTV" data-toggle="collapse" data-target=".property_BROWSER_WEBTV .collapse">
+<h2>$BROWSER_WEBTV</h2>
+<pre>$BROWSER_WEBTV </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_OPERATING_SYSTEM_UNKNOWN"> </a><div class="element clickable property public property_OPERATING_SYSTEM_UNKNOWN" data-toggle="collapse" data-target=".property_OPERATING_SYSTEM_UNKNOWN .collapse">
+<h2>$OPERATING_SYSTEM_UNKNOWN</h2>
+<pre>$OPERATING_SYSTEM_UNKNOWN </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PLATFORM_ANDROID"> </a><div class="element clickable property public property_PLATFORM_ANDROID" data-toggle="collapse" data-target=".property_PLATFORM_ANDROID .collapse">
+<h2>$PLATFORM_ANDROID</h2>
+<pre>$PLATFORM_ANDROID </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PLATFORM_APPLE"> </a><div class="element clickable property public property_PLATFORM_APPLE" data-toggle="collapse" data-target=".property_PLATFORM_APPLE .collapse">
+<h2>$PLATFORM_APPLE</h2>
+<pre>$PLATFORM_APPLE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PLATFORM_BEOS"> </a><div class="element clickable property public property_PLATFORM_BEOS" data-toggle="collapse" data-target=".property_PLATFORM_BEOS .collapse">
+<h2>$PLATFORM_BEOS</h2>
+<pre>$PLATFORM_BEOS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PLATFORM_BLACKBERRY"> </a><div class="element clickable property public property_PLATFORM_BLACKBERRY" data-toggle="collapse" data-target=".property_PLATFORM_BLACKBERRY .collapse">
+<h2>$PLATFORM_BLACKBERRY</h2>
+<pre>$PLATFORM_BLACKBERRY </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PLATFORM_FREEBSD"> </a><div class="element clickable property public property_PLATFORM_FREEBSD" data-toggle="collapse" data-target=".property_PLATFORM_FREEBSD .collapse">
+<h2>$PLATFORM_FREEBSD</h2>
+<pre>$PLATFORM_FREEBSD </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PLATFORM_IPAD"> </a><div class="element clickable property public property_PLATFORM_IPAD" data-toggle="collapse" data-target=".property_PLATFORM_IPAD .collapse">
+<h2>$PLATFORM_IPAD</h2>
+<pre>$PLATFORM_IPAD </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PLATFORM_IPHONE"> </a><div class="element clickable property public property_PLATFORM_IPHONE" data-toggle="collapse" data-target=".property_PLATFORM_IPHONE .collapse">
+<h2>$PLATFORM_IPHONE</h2>
+<pre>$PLATFORM_IPHONE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PLATFORM_IPOD"> </a><div class="element clickable property public property_PLATFORM_IPOD" data-toggle="collapse" data-target=".property_PLATFORM_IPOD .collapse">
+<h2>$PLATFORM_IPOD</h2>
+<pre>$PLATFORM_IPOD </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PLATFORM_LINUX"> </a><div class="element clickable property public property_PLATFORM_LINUX" data-toggle="collapse" data-target=".property_PLATFORM_LINUX .collapse">
+<h2>$PLATFORM_LINUX</h2>
+<pre>$PLATFORM_LINUX </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PLATFORM_NETBSD"> </a><div class="element clickable property public property_PLATFORM_NETBSD" data-toggle="collapse" data-target=".property_PLATFORM_NETBSD .collapse">
+<h2>$PLATFORM_NETBSD</h2>
+<pre>$PLATFORM_NETBSD </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PLATFORM_NOKIA"> </a><div class="element clickable property public property_PLATFORM_NOKIA" data-toggle="collapse" data-target=".property_PLATFORM_NOKIA .collapse">
+<h2>$PLATFORM_NOKIA</h2>
+<pre>$PLATFORM_NOKIA </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PLATFORM_OPENBSD"> </a><div class="element clickable property public property_PLATFORM_OPENBSD" data-toggle="collapse" data-target=".property_PLATFORM_OPENBSD .collapse">
+<h2>$PLATFORM_OPENBSD</h2>
+<pre>$PLATFORM_OPENBSD </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PLATFORM_OPENSOLARIS"> </a><div class="element clickable property public property_PLATFORM_OPENSOLARIS" data-toggle="collapse" data-target=".property_PLATFORM_OPENSOLARIS .collapse">
+<h2>$PLATFORM_OPENSOLARIS</h2>
+<pre>$PLATFORM_OPENSOLARIS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PLATFORM_OS2"> </a><div class="element clickable property public property_PLATFORM_OS2" data-toggle="collapse" data-target=".property_PLATFORM_OS2 .collapse">
+<h2>$PLATFORM_OS2</h2>
+<pre>$PLATFORM_OS2 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PLATFORM_SUNOS"> </a><div class="element clickable property public property_PLATFORM_SUNOS" data-toggle="collapse" data-target=".property_PLATFORM_SUNOS .collapse">
+<h2>$PLATFORM_SUNOS</h2>
+<pre>$PLATFORM_SUNOS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PLATFORM_UNKNOWN"> </a><div class="element clickable property public property_PLATFORM_UNKNOWN" data-toggle="collapse" data-target=".property_PLATFORM_UNKNOWN .collapse">
+<h2>$PLATFORM_UNKNOWN</h2>
+<pre>$PLATFORM_UNKNOWN </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PLATFORM_WINDOWS"> </a><div class="element clickable property public property_PLATFORM_WINDOWS" data-toggle="collapse" data-target=".property_PLATFORM_WINDOWS .collapse">
+<h2>$PLATFORM_WINDOWS</h2>
+<pre>$PLATFORM_WINDOWS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PLATFORM_WINDOWS_CE"> </a><div class="element clickable property public property_PLATFORM_WINDOWS_CE" data-toggle="collapse" data-target=".property_PLATFORM_WINDOWS_CE .collapse">
+<h2>$PLATFORM_WINDOWS_CE</h2>
+<pre>$PLATFORM_WINDOWS_CE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_VERSION_UNKNOWN"> </a><div class="element clickable property public property_VERSION_UNKNOWN" data-toggle="collapse" data-target=".property_VERSION_UNKNOWN .collapse">
+<h2>$VERSION_UNKNOWN</h2>
+<pre>$VERSION_UNKNOWN </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__agent"> </a><div class="element clickable property public property__agent" data-toggle="collapse" data-target=".property__agent .collapse">
+<h2>$_agent</h2>
+<pre>$_agent </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__aol_version"> </a><div class="element clickable property public property__aol_version" data-toggle="collapse" data-target=".property__aol_version .collapse">
+<h2>$_aol_version</h2>
+<pre>$_aol_version </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__browser_name"> </a><div class="element clickable property public property__browser_name" data-toggle="collapse" data-target=".property__browser_name .collapse">
+<h2>$_browser_name</h2>
+<pre>$_browser_name </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__is_aol"> </a><div class="element clickable property public property__is_aol" data-toggle="collapse" data-target=".property__is_aol .collapse">
+<h2>$_is_aol</h2>
+<pre>$_is_aol </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__is_mobile"> </a><div class="element clickable property public property__is_mobile" data-toggle="collapse" data-target=".property__is_mobile .collapse">
+<h2>$_is_mobile</h2>
+<pre>$_is_mobile </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__is_robot"> </a><div class="element clickable property public property__is_robot" data-toggle="collapse" data-target=".property__is_robot .collapse">
+<h2>$_is_robot</h2>
+<pre>$_is_robot </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__os"> </a><div class="element clickable property public property__os" data-toggle="collapse" data-target=".property__os .collapse">
+<h2>$_os</h2>
+<pre>$_os </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__platform"> </a><div class="element clickable property public property__platform" data-toggle="collapse" data-target=".property__platform .collapse">
+<h2>$_platform</h2>
+<pre>$_platform </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__version"> </a><div class="element clickable property public property__version" data-toggle="collapse" data-target=".property__version .collapse">
+<h2>$_version</h2>
+<pre>$_version </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.1.0
+</a> and<br>
+            generated on 2013-11-19T15:06:03+01:00.<br></footer></div>
+</div>
+</body>
+</html>
