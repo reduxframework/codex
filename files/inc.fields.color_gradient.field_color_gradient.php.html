@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>API Documentation</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/prism.css" rel="stylesheet" media="all"/>
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+    <!--[if lt IE 9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.js"></script>
+    <script src="../js/prism.min.js"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+        <script type="text/javascript">
+        function loadExternalCodeSnippets() {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach(function (pre) {
+                var src = pre.getAttribute('data-src');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist or is empty';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        $(document).ready(function(){
+            loadExternalCodeSnippets();
+        });
+        $('#source-view').on('shown', function () {
+            loadExternalCodeSnippets();
+        })
+    </script>
+
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="../index.html">API Documentation</a>
+
+            <div class="nav-collapse">
+                <ul class="nav pull-right">
+                    <li class="dropdown">
+                        <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown">
+                            API Documentation <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                                                    </ul>
+                    </li>
+                    <li class="dropdown" id="charts-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Charts <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../graphs/class.html">
+                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="reports-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Reports <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../reports/errors.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">377</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/markers.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">2</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+        <section class="row-fluid">
+        <div class="span2 sidebar">
+                                <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-850518895"></a>
+                                <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
+            </div>
+            <div id="namespace-850518895" class="accordion-body collapse in">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/Redux_Validation_color.html">Redux_Validation_color</a></li>
+                                                    <li class="class"><a href="../classes/Redux_Validation_js.html">Redux_Validation_js</a></li>
+                                                    <li class="class"><a href="../classes/Redux_Validation_html.html">Redux_Validation_html</a></li>
+                                                    <li class="class"><a href="../classes/Redux_Validation_comma_numeric.html">Redux_Validation_comma_numeric</a></li>
+                                                    <li class="class"><a href="../classes/Redux_Validation_str_replace.html">Redux_Validation_str_replace</a></li>
+                                                    <li class="class"><a href="../classes/Redux_Validation_numeric.html">Redux_Validation_numeric</a></li>
+                                                    <li class="class"><a href="../classes/Redux_Validation_email.html">Redux_Validation_email</a></li>
+                                                    <li class="class"><a href="../classes/Redux_Validation_html_custom.html">Redux_Validation_html_custom</a></li>
+                                                    <li class="class"><a href="../classes/Redux_Validation_colorrgba.html">Redux_Validation_colorrgba</a></li>
+                                                    <li class="class"><a href="../classes/Redux_Validation_no_special_chars.html">Redux_Validation_no_special_chars</a></li>
+                                                    <li class="class"><a href="../classes/Redux_Validation_preg_replace.html">Redux_Validation_preg_replace</a></li>
+                                                    <li class="class"><a href="../classes/Redux_Validation_no_html.html">Redux_Validation_no_html</a></li>
+                                                    <li class="class"><a href="../classes/Redux_Validation_color_rgba.html">Redux_Validation_color_rgba</a></li>
+                                                    <li class="class"><a href="../classes/Redux_Validation_date.html">Redux_Validation_date</a></li>
+                                                    <li class="class"><a href="../classes/Redux_Validation_url.html">Redux_Validation_url</a></li>
+                                                    <li class="class"><a href="../classes/Redux_Validation_css.html">Redux_Validation_css</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_color_gradient.html">ReduxFramework_color_gradient</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_link_color.html">ReduxFramework_link_color</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_multi_text.html">ReduxFramework_multi_text</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_media.html">ReduxFramework_media</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_color.html">ReduxFramework_color</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_spacing.html">ReduxFramework_spacing</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_divide.html">ReduxFramework_divide</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_text.html">ReduxFramework_text</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_slides.html">ReduxFramework_slides</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_group.html">ReduxFramework_group</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_info.html">ReduxFramework_info</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_sorter.html">ReduxFramework_sorter</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_radio.html">ReduxFramework_radio</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_gallery.html">ReduxFramework_gallery</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_password.html">ReduxFramework_password</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_raw_align.html">ReduxFramework_raw_align</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_checkbox.html">ReduxFramework_checkbox</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_dimensions.html">ReduxFramework_dimensions</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_color_rgba.html">ReduxFramework_color_rgba</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_ace_editor.html">ReduxFramework_ace_editor</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_switch.html">ReduxFramework_switch</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_select_image.html">ReduxFramework_select_image</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_slider.html">ReduxFramework_slider</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_date.html">ReduxFramework_date</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_raw.html">ReduxFramework_raw</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_button_set.html">ReduxFramework_button_set</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_textarea.html">ReduxFramework_textarea</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_border.html">ReduxFramework_border</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_image_select.html">ReduxFramework_image_select</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_sortable.html">ReduxFramework_sortable</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_editor.html">ReduxFramework_editor</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_select.html">ReduxFramework_select</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_typography.html">ReduxFramework_typography</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_spinner.html">ReduxFramework_spinner</a></li>
+                                                    <li class="class"><a href="../classes/Browser.html">Browser</a></li>
+                                                    <li class="class"><a href="../classes/Simple_System_Info.html">Simple_System_Info</a></li>
+                                                    <li class="class"><a href="../classes/Redux_Tracking.html">Redux_Tracking</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework.html">ReduxFramework</a></li>
+                                                    <li class="class"><a href="../classes/EDD_SL_Theme_Updater.html">EDD_SL_Theme_Updater</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_edd_license.html">ReduxFramework_edd_license</a></li>
+                                                    <li class="class"><a href="../classes/EDD_SL_Plugin_Updater.html">EDD_SL_Plugin_Updater</a></li>
+                                                    <li class="class"><a href="../classes/EDD_License.html">EDD_License</a></li>
+                                                    <li class="class"><a href="../classes/ReduxFramework_extension_edd.html">ReduxFramework_extension_edd</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </section>
+    <section class="row-fluid">
+        <div class="span10 offset2">
+            <div class="row-fluid">
+                <div class="span8 content file">
+                    <nav>
+                                                                    </nav>
+
+                    <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal"><i class="icon-code"></i></a>
+                    <h1><small>inc/fields/color_gradient</small>field_color_gradient.php</h1>
+                    <p><em>Redux Framework is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+any later version.</em></p>
+                    <p>Redux Framework is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with Redux Framework. If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
+
+                    
+                    
+                                        <h2>Classes</h2>
+                    <table class="table table-hover">
+                                            <tr>
+                            <td><a href="../classes/ReduxFramework_color_gradient.html">ReduxFramework_color_gradient</a></td>
+                            <td><em>Main ReduxFramework_color_gradient class</em></td>
+                        </tr>
+                                        </table>
+                                    </div>
+
+                <aside class="span4 detailsbar">
+                    <dl>
+                                                    <dt>Package</dt>
+                            <dd><div class="namespace-wrapper">ReduxFramework\Field_Color_Gradient</div></dd>
+                        
+                        
+                    </dl>
+                    <h2>Tags</h2>
+                    <table class="table table-condensed">
+                                                    <tr>
+                                <th>
+                                    author
+                                </th>
+                                <td>
+                                                                            <p>Daniel J Griffiths (Ghost1227)</p>
+                                                                            <p>Dovy Paukstys</p>
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <th>
+                                    version
+                                </th>
+                                <td>
+                                                                            
+                                                                    </td>
+                            </tr>
+                                            </table>
+
+                </aside>
+            </div>
+
+            
+            
+        </div>
+    </section>
+
+    <div id="source-view" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="source-view-label" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="source-view-label"></h3>
+        </div>
+        <div class="modal-body">
+            <pre data-src="../files/inc/fields/color_gradient/field_color_gradient.php.txt" class="language-php line-numbers"></pre>
+        </div>
+    </div>
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <section class="row-fluid footer-sections">
+                        <section class="span4">
+                                                        <h1><i class="icon-code"></i></h1>
+                            <div>
+                                <ul>
+                                                                    </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-bar-chart"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../graphs/class.html">Class Hierarchy Diagram</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-pushpin"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../reports/errors.html">Errors</a></li>
+                                    <li><a href="../reports/markers.html">Markers</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <hr />
+                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
+                    on December 28th, 2013 at 21:22.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>
